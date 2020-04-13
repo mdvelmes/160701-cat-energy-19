@@ -1,1 +1,10 @@
-body { background: rgb(70, 211, 42); }
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "global.scss";
+
+
+@import "blocks/**/*.scss";
+
+

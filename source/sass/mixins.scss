@@ -1,0 +1,40 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin box($width, $color, $bg: #f0f0f0) {
+  border: $width solid $color;
+  padding: 20px;
+  background: $bg;
+}
+
+@mixin overlay($left: 50%, $top: 50%) {
+  position: absolute;
+  left: $left;
+  top: $top;
+  transform: translate(-50%, -50%);
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  min-height: $height;
+}
+
+@mixin radius($radius: 50%) {
+  border-radius: $radius;
+}
+
+@mixin text($size: 14px, $height: 18px, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}

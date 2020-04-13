@@ -1,0 +1,38 @@
+.intro {
+  background: url(../../img/index-background-mobile@1x.jpg) no-repeat top;
+}
+
+.intro__appearance {
+display: block;
+@include center;
+}
+
+.intro__title {
+  font-family: $font-oswald;
+  @include text(36px, 36px);
+  text-align: center;
+  color: $text-white;
+
+  padding-top: 30px;
+}
+
+.intro__description {
+  @extend .intro__title;
+  @include text(14px, 14px);
+  text-transform: uppercase;
+
+  padding-top: 20px;
+}
+
+.intro__appearance {
+  display: block;
+
+  margin-top: 20px;
+}
+
+.intro__program-choise {
+  margin-top: 3px;
+  margin-bottom: 22px;
+
+  @include center;
+}

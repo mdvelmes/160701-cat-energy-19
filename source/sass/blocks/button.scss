@@ -1,0 +1,39 @@
+.button {
+  display: block;
+  @include size(280px, 40px);
+  padding: 10px 0;
+
+  font-family: $font-oswald;
+  @include text;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $green;
+}
+
+.button--catalog {
+  position: relative;
+  @include size(240px, 57px);
+  padding: 20px 0;
+
+  @include text(16px, 16px);
+  text-align: left;
+  color: $text-black;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+
+  &::after {
+    display: block;
+    content: '';
+    @include overlay;
+    background-image: url(../../img/icon-right-arrow-long.svg);
+    @include size(25px, 12px);
+  }
+}
+
+.button--all {
+  background-color: $grey;
+  color: $text-grey;
+}

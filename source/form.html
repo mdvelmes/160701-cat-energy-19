@@ -4,22 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>CAT ENERGY - Подбор программы</title>
-  <link rel="stylesheet" href="/source/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="/source/img/#" width="191" height="39"
-        alt="CAT ENERGY - спортивное питание для котов">
-    </a>
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg"" width="191" height="39"
+          alt="CAT ENERGY - спортивное питание для котов">
+      </a>
+    </div>
     <nav class="page-header__main-nav main-nav">
-      <button class="main-nav__nav-toggle" type="button">Открыть меню</button>
+      <button class="main-nav__nav-toggle visually-hidden" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="/source/index.html">Главная</a></li>
-          <li class="site-list__item"><a href="/source/catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="/source/form.html">Подбор программы</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -121,23 +123,30 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="/source/img/#" alt="лого CAT ENERGY в футере">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
+          alt="лого CAT ENERGY в футере">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#"></a>
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--insta" href="#"></a>
+          <a class="social__link social__link--insta" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#"></a>
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
       </ul>
       <p class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__logo" src="/source/img/#">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Лого HTMLacademy">
         </a>
       </p>
     </div>

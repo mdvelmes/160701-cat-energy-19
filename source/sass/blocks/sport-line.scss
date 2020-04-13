@@ -1,0 +1,60 @@
+.sport-line {
+  display: block;
+
+  @include size(280px, 266px);
+
+  background-color: $grey;
+}
+
+// .sport-line__wrapper {
+// padding-top: 22px;
+// padding-left: 20px;
+// }
+
+.sport-line__title {
+  display: inline-block;
+  font-family: $font-oswald;
+  @include text(24px, 37px);
+  color: $text-black;
+  text-transform: uppercase;
+  // padding-bottom: 10px;
+
+  // padding-left: 20px;
+}
+
+.sport-line__definition {
+  @include size(240px, null);
+  padding: 20px 0;
+  padding-left: 21px;
+}
+
+.sport-line__open {
+  @include center;
+}
+
+.sport-line__icon {
+  display: inline-block;
+  position: relative;
+
+  @include size(50px);
+
+  background-color: $green;
+  @include radius;
+
+  &::after {
+    content: '';
+    @include overlay;
+  }
+}
+
+.sport-line__icon--slim::after {
+  background: url(../../img/icon-cat-slim.svg) no-repeat center;
+  background-size: auto;
+  @include size(35px, 49px);
+}
+
+.sport-line__icon--mass::after {
+  background: url(../../img/icon-cat-pro.svg) no-repeat center;
+  background-size: auto;
+  @include size(67px, 28px)
+}

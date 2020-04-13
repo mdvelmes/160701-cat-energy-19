@@ -1,0 +1,32 @@
+// .social__item {
+//   position: relative;
+//   display: inline-block;
+
+//   @include size(20px);
+
+//   &::before {
+//     content: '';
+//     @include overlay;
+//   }
+// }
+
+.social__link--vk {
+  display: block;
+  background: url(../../img/icon-vk.svg) no-repeat center;
+  background-size: auto;
+  @include size(22px, 12px);
+}
+
+.social__link--insta {
+  display: block;
+  background: url(../../img/icon-insta.svg) no-repeat center;
+  background-size: auto;
+  @include size(17px);
+}
+
+.social__link--fb {
+  display: block;
+  background: url(../../img/icon-fb.svg) no-repeat center;
+  background-size: auto;
+  @include size(10px, 19px);
+}

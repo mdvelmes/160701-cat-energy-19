@@ -1,0 +1,18 @@
+.catalog__title {
+  font-family: $font-oswald;
+  color: $text-black;
+  @include text(36px, 60px);
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.catalog__list {
+  border-top: $border;
+}
+
+.catalog__item {
+  padding-bottom: 25px;
+  border-bottom: $border;
+}

@@ -1,0 +1,14 @@
+.product__wrapper {
+  padding: 0 20px;
+}
+
+.product__order {
+  @include center;
+}
+
+.product__title {
+  font-family: $font-oswald;
+  @include text(16px, 20px);
+  color: $text-black;
+  text-transform: uppercase;
+}

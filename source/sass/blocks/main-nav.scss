@@ -1,0 +1,14 @@
+.main-nav__item {
+  display: none;
+
+  min-height: 65px;
+  padding: 24px 0;
+
+  font-family: $font-oswald;
+  @include text(20px, 20px, 700);
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-black;
+
+  border-bottom: 1px solid $grey;
+}
