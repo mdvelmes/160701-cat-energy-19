@@ -1,0 +1,16 @@
+.contacts {
+  background-color: $grey;
+}
+
+.contacts__title {
+font-family: $font-oswald;
+@include text(16px,20px);
+text-align: left;
+text-transform: uppercase;
+color: $text-black;
+}
+
+.contacts__address {
+  @include text(14px,20px);
+  text-align: left;
+}
