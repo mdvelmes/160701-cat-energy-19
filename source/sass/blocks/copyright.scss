@@ -1,0 +1,14 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+
+.copyright__text,
+.copyright__logo {
+  display: block;
+}
+
+.copyright__text {
+  @include text(16px, 16px);
+}

@@ -1,10 +1,10 @@
 .intro {
-  background: url(../../img/index-background-mobile@1x.jpg) no-repeat top;
+  background: #63a73a url(../../img/index-background-mobile@1x.jpg) no-repeat center;
 }
 
 .intro__appearance {
-display: block;
-@include center;
+  display: block;
+  @include center;
 }
 
 .intro__title {
@@ -17,9 +17,11 @@ display: block;
 }
 
 .intro__description {
-  @extend .intro__title;
+  font-family: $font-oswald;
   @include text(14px, 14px);
+  text-align: center;
   text-transform: uppercase;
+  color: $text-white;
 
   padding-top: 20px;
 }
@@ -31,8 +33,51 @@ display: block;
 }
 
 .intro__program-choise {
-  margin-top: 3px;
-  margin-bottom: 22px;
+  margin: 3px 20px 22px;
+  // margin-top: 3px;
+  // margin-bottom: 22px;
 
-  @include center;
+  // @include center:
+}
+
+
+@media (min-width: $width-tablet) {
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro {
+    background: none;
+  }
+
+  .intro__title {
+    padding: 0 120px;
+    padding-top: 60px;
+
+    @include text(60px, 60px);
+    text-align: left;
+    color: $text-black;
+  }
+
+  .intro__description {
+    padding: 0 120px;
+    padding-top: 30px;
+
+    @include text(20px, 20px);
+    text-align: left;
+    color: $text-black;
+  }
+
+  .intro__appearance {
+    order: 1;
+  }
+
+  .intro__program-choise {
+    margin-left: 120px;
+    margin-top: 50px;
+    @include size(245px, 52px);
+    font-size: 20px;
+    line-height: 52px;
+  }
 }

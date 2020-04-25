@@ -1,4 +1,28 @@
+.catalogs__wrapper {
+  margin: 22px 20px 0;
+}
+
 .catalogs__item {
-margin-top: 20px;
-@include center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .catalogs__item {
+    padding: 75px 285px 60px 50px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalogs__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 110px;
+  }
+
+  .catalogs__item {
+    padding: 50px;
+    @include size(570px, 372px);
+    margin-bottom: 70px;
+  }
 }

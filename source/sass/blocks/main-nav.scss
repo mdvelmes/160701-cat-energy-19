@@ -5,10 +5,33 @@
   padding: 24px 0;
 
   font-family: $font-oswald;
-  @include text(20px, 20px, 700);
+  @include text(20px, 20px, 500);
   text-transform: uppercase;
   text-align: center;
   color: $text-black;
 
   border-bottom: 1px solid $grey;
+}
+
+@media (min-width: $width-tablet) {
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+
+    padding-right: 30px;
+  }
+
+  .main-nav__item {
+    display: block;
+
+    padding-left: 35px;
+
+    @include text(18px, 25px);
+
+    border: none;
+  }
+
+  .main-nav__item--current {
+    border-bottom: 2px solid $green;
+  }
 }

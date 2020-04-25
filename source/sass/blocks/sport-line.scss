@@ -1,40 +1,24 @@
 .sport-line {
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  @include size(280px, 266px);
+  // min-width: 280px;
+  // @include size(null, 266px);
 
   background-color: $grey;
 }
 
-// .sport-line__wrapper {
-// padding-top: 22px;
-// padding-left: 20px;
-// }
-
-.sport-line__title {
-  display: inline-block;
-  font-family: $font-oswald;
-  @include text(24px, 37px);
-  color: $text-black;
-  text-transform: uppercase;
-  // padding-bottom: 10px;
-
-  // padding-left: 20px;
-}
-
-.sport-line__definition {
-  @include size(240px, null);
-  padding: 20px 0;
-  padding-left: 21px;
-}
-
-.sport-line__open {
-  @include center;
+.sport-line__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .sport-line__icon {
-  display: inline-block;
   position: relative;
+
+  display: block;
 
   @include size(50px);
 
@@ -43,6 +27,8 @@
 
   &::after {
     content: '';
+
+    position: absolute;
     @include overlay;
   }
 }
@@ -57,4 +43,110 @@
   background: url(../../img/icon-cat-pro.svg) no-repeat center;
   background-size: auto;
   @include size(67px, 28px)
+}
+
+.sport-line__title {
+  display: block;
+  margin-left: 20px;
+
+  font-family: $font-oswald;
+  @include text(24px, 37px);
+  color: $text-black;
+  text-transform: uppercase;
+}
+
+.sport-line__definition {
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sport-line__catalog {
+  display: block;
+  position: relative;
+
+  font-family: $font-oswald;
+  @include text(16px, 16px);
+  text-align: left;
+  text-transform: uppercase;
+  color: $text-black;
+
+  &::after {
+    content: '';
+
+    display: block;
+
+    position: absolute;
+    left: 95px;
+    top: 3px;
+
+    background: url(../../img/icon-right-arrow-long.svg) no-repeat center;
+    @include size(25px, 12px);
+  }
+}
+
+
+@media (min-width: $width-tablet) {
+  .sport-line {
+    min-height: 372px;
+  }
+
+  .sport-line__title {
+    margin: 0;
+
+    @include text(36px, 37px);
+  }
+
+  .sport-line__definition {
+    border: none;
+  }
+
+  .sport-line__catalog {
+    @include text(20px,20px);
+
+    &::after {
+      left: 130px;
+    }
+  }
+  .sport-line__icon {
+    position: absolute;
+    right: 60px;
+    top: 90px;
+
+    @include size(200px);
+
+    &--slim::after {
+      @include size(141px, 194px);
+    }
+
+    &--mass::after {
+      @include size(268px, 116px);
+    }
+  }
+}
+
+
+@media (min-width: $width-desktop) {
+  // .sport-line__wrapper {
+  //   margin-top: 45px;
+  // }
+
+  .sport-line__icon {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    flex-shrink: 0;
+    @include size(100px);
+    margin-right: 60px;
+
+    &--slim::after {
+      @include size(71px, 97px);
+    }
+
+    &--mass::after {
+      @include size(134px, 57px);
+    }
+  }
 }

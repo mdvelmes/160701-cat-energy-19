@@ -1,39 +1,75 @@
 .button {
   display: block;
+
+  // min-width: 280px;
   @include size(280px, 40px);
-  padding: 10px 0;
 
   font-family: $font-oswald;
   @include text;
   text-align: center;
+  line-height: 40px;
   text-transform: uppercase;
   color: $white;
 
   background-color: $green;
+
+  // &--catalog {
+  //   position: relative;
+  //   min-width: 240px;
+
+  //   // padding-top: 20px;
+
+  //   @include text(16px, 16px);
+  //   text-align: left;
+  //   color: $text-black;
+
+  //   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  //   background-color: transparent;
+
+  //   &::after {
+  //     content: '';
+
+  //     display: block;
+
+  //     position: absolute;
+  //     left: 100px;
+  //     top: 22px;
+
+
+  //     background: url(../../img/icon-right-arrow-long.svg) no-repeat center;
+  //     @include size(25px, 12px);
+  //   }
 }
 
-.button--catalog {
-  position: relative;
-  @include size(240px, 57px);
-  padding: 20px 0;
+// &--all {
+//   background-color: $grey;
+//   color: $text-grey;
+// }
+// }
 
-  @include text(16px, 16px);
-  text-align: left;
-  color: $text-black;
+// .button__link {
+//   margin: auto;
+// }
 
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
+@media (min-width: $width-tablet) {
+  .button {
+    @include size(249px, 40px);
 
-  &::after {
-    display: block;
-    content: '';
-    @include overlay;
-    background-image: url(../../img/icon-right-arrow-long.svg);
-    @include size(25px, 12px);
+    @include text(16px, 40px);
+
+    // &--catalog {
+    //   border: none;
+
+    //   &::after {
+    //     left: 110px;
+    //     top: 15px;
+    //   }
+    // }
   }
 }
 
-.button--all {
-  background-color: $grey;
-  color: $text-grey;
+@media (min-width: $width-desktop) {
+  .button {
+    width: 169px;
+  }
 }

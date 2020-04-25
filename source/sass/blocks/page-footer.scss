@@ -10,6 +10,7 @@
 
 .page-footer__social {
   width: 280px;
+  height: 60px;
   @include center;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -18,3 +19,15 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.page-footer__wrapper {
+  padding: 0 20px;
+}
+
+
+@media (min-width: $width-tablet) {
+  .page-footer__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+}

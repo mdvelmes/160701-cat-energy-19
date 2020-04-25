@@ -10,6 +10,21 @@
 //   }
 // }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social__item {
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 .social__link--vk {
   display: block;
   background: url(../../img/icon-vk.svg) no-repeat center;

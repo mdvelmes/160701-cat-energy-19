@@ -1,12 +1,33 @@
+
+.features tbody {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  width: 150px;
+
+  border-spacing: 0;
+  border: none;
+  border-collapse: collapse;
+}
+
+.features__row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .features__cell {
   @include text(12px, 16px);
   padding: 0;
   border: none;
-
 }
 
-.features {
-  border-spacing: 0;
-  border: none;
-  border-collapse: collapse;;
+
+@media (min-width: $width-tablet) {
+  .features__row {
+    border-bottom: 1px solid $text-form;
+  }
+
+  .features__cell {
+    @include text(16px, 16px);
+  }
 }

@@ -16,3 +16,35 @@
   padding-bottom: 25px;
   border-bottom: $border;
 }
+
+.catalog__all {
+  padding: 0 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .catalog__title {
+    @include text(60px, 60px);
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+
+    border: none;
+  }
+
+  .catalog__item {
+    margin-top: 140px;
+    padding-bottom: 40px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog__list {
+    padding: 0 110px;
+  }
+}

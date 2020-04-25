@@ -9,15 +9,15 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo-wrapper">
-      <img class="logo-image" src="img/logo-mobile.svg" width="191" height="39"
+    <div class="page-header__logo-wrap">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
         alt="CAT ENERGY - спортивное питание для котов">
     </div>
     <nav class="page-header__main-nav main-nav">
       <button class="main-nav__nav-toggle visually-hidden" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__item--current">Главная</a></li>
           <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
           <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
         </ul>
@@ -33,9 +33,7 @@
         <p class="intro__description">Занялся собой? Займись котом!</p>
         <img class="intro__appearance" src="img/index-can-mobile@1x.png" width="280" height="270"
           alt="cat energy PRO со вкусом курицы">
-        <div class="intro__program-choise button">
-          <a class="" href="/source/form.html">Подобрать программу</a>
-        </div>
+        <a class="intro__program-choise button" href="/source/form.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -44,24 +42,25 @@
         <h2 class="visually-hidden">Каталоги спортивного питания</h2>
 
         <div class="catalogs__item sport-line">
-          <div class="sport-line__title-wrapper">
+          <div class="sport-line__wrapper">
             <span class="sport-line__icon sport-line__icon--slim"></span>
             <h3 class="sport-line__title">Похудение</h3>
           </div>
-          <p class="sport-line__definition">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          <p class="sport-line__definition">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям?
             Пора на диету! Cat Energy Slim
             поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="sport-line__open button button--catalog" href="#">Каталог Slim</a>
+          <a class="sport-line__catalog" href="#">Каталог Slim</a>
         </div>
 
         <div class="catalogs__item sport-line">
-          <div class="sport-line__title-wrapper">
+          <div class="sport-line__wrapper">
             <span class="sport-line__icon sport-line__icon--mass"></span>
             <h3 class="sport-line__title">Набор массы</h3>
           </div>
           <p class="sport-line__definition">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="sport-line__open button button--catalog" href="#">Каталог pro</a>
+          <a class="sport-line__catalog" href="#">Каталог pro</a>
         </div>
       </div>
     </section>
@@ -70,26 +69,34 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--one">
             <span class="advantages__icon advantages__icon--usefull"></span>
-            Функциональное питание содержит только полезные
-            питательные вещества.
+            <p class="advantages__text">
+              Функциональное питание содержит только полезные
+              питательные вещества.
+            </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--two">
             <span class="advantages__icon advantages__icon--powder"></span>
-            Выпускается в виде порошка, который нужно лишь залить
-            кипятком и готово.
+            <p class="advantages__text">
+              Выпускается в виде порошка, который нужно лишь залить
+              кипятком и готово.
+            </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--three">
             <span class="advantages__icon advantages__icon--functional"></span>
-            Замените один-два приема обычной еды на наше
-            функциональное питание.
+            <p class="advantages__text">
+              Замените один-два приема обычной еды на наше
+              функциональное питание.
+            </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--four">
             <span class="advantages__icon advantages__icon--result"></span>
-            Уже через месяц наслаждайтесь изменениями к лучшему
-            вашего
-            питомца!</li>
+            <p class="advantages__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему
+              <br> вашего питомца!
+            </p>
+          </li>
         </ul>
       </div>
     </section>
@@ -98,7 +105,8 @@
       <h2 class="results__title">Живой пример</h2>
       <p class="results__description">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+        16
         часов в день.
       </p>
       <p class="results__item">
