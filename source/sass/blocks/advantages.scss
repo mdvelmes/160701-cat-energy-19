@@ -1,27 +1,23 @@
 .advantages__title {
   font-family: $font-oswald;
-  @include text(30px, 36px);
+  @include text(36px, 60px);
   color: $text-black;
-  text-align: center;
+  text-align: left;
 }
 
 .advantages__list {
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 .advantages__wrapper {
-  margin: 0 20px;
+  margin-bottom: 40px;
 }
 
 .advantages__item {
   display: flex;
   align-items: center;
 
-  padding-bottom: 30px;
-}
-
-.advantages__text br {
-  display: none;
+  padding-bottom: 20px;
 }
 
 .advantages__icon {
@@ -68,8 +64,17 @@
 
 // Планшет
 @media (min-width: $width-tablet) {
+  // .advantages__wrapper {
+  //   margin-top: 50px;
+  //   margin-bottom: 55px;
+  // }
+
+  .advantages {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .advantages__wrapper {
-    margin: 50px 30px;
+    margin-bottom: 70px;
   }
 
   .advantages__title {
@@ -80,6 +85,8 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    height: 570px;
+    align-content: space-between;
   }
 
   .advantages__item {
@@ -88,27 +95,22 @@
     flex-direction: column;
     align-items: flex-start;
 
-    padding-bottom: 100px;
-    margin-top: 30px;
+    // padding-bottom: 40px;
+    // margin-top: 30px;
+
 
     width: calc(100% / 2);
 
     &::before {
       position: absolute;
-      // top: 10px;
       left: 32%;
       top: -40px;
-      // transform: translateX(-50%);
 
       font-family: $font-oswald;
       color: #f2f2f2;
       @include text(281px, 281px);
       z-index: -1;
     }
-  }
-
-  .advantages__text {
-    width: 245px;
   }
 
   .advantages__item--one::before {
@@ -127,6 +129,10 @@
     content: '4';
   }
 
+  .advantages__text {
+    width: 245px;
+  }
+
   .advantages__icon {
     @include size(80px);
     margin-bottom: 35px;
@@ -135,7 +141,12 @@
 
 // Десктоп
 @media (min-width: $width-desktop) {
+  .advantages {
+    border-bottom: none;
+  }
+
   .advantages__list {
+    height: auto;
     justify-content: space-between;
   }
 
@@ -153,9 +164,5 @@
 
   .advantages__title {
     text-align: left;
-  }
-
-  .advantages__wrapper {
-    margin: 0 110px;
   }
 }

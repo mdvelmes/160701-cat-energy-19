@@ -1,10 +1,21 @@
 .intro {
-  background: #63a73a url(../../img/index-background-mobile@1x.jpg) no-repeat center;
+  display: block;
+  margin-bottom: 200px;
+
+  background: url(../../img/index-background-mobile@1x.jpg) no-repeat top,
+    linear-gradient(to right, #65a93c, #63a73a);
+  background-size: auto;
+}
+
+.intro__wrapper {
+  height: 305px;
 }
 
 .intro__appearance {
   display: block;
   @include center;
+
+  margin-top: 20px;
 }
 
 .intro__title {
@@ -26,29 +37,17 @@
   padding-top: 20px;
 }
 
-.intro__appearance {
-  display: block;
-
-  margin-top: 20px;
-}
-
-.intro__program-choise {
-  margin: 3px 20px 22px;
-  // margin-top: 3px;
-  // margin-bottom: 22px;
-
-  // @include center:
-}
-
 
 @media (min-width: $width-tablet) {
+  .intro {
+    position: relative;
+
+    background: none;
+  }
+
   .intro__wrapper {
     display: flex;
     flex-direction: column;
-  }
-
-  .intro {
-    background: none;
   }
 
   .intro__title {
@@ -70,7 +69,11 @@
   }
 
   .intro__appearance {
-    order: 1;
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
   }
 
   .intro__program-choise {

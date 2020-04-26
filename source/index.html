@@ -9,25 +9,27 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo-wrap">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
-        alt="CAT ENERGY - спортивное питание для котов">
-    </div>
-    <nav class="page-header__main-nav main-nav">
+    <div class="page-header__wrapper container  ">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+          alt="CAT ENERGY - спортивное питание для котов">
+      </a>
       <button class="main-nav__nav-toggle visually-hidden" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__item--current">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__item--current">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <section class="page-main__intro intro">
-      <div class="intro__wrapper">
+    <section class="intro">
+      <div class="intro__wrapper container">
         <h1 class="intro__title">Функциональное
           питание для котов</h1>
         <p class="intro__description">Занялся собой? Займись котом!</p>
@@ -37,8 +39,8 @@
       </div>
     </section>
 
-    <section class="page-main__catalogs catalogs">
-      <div class="catalogs__wrapper">
+    <section class="catalogs">
+      <div class="catalogs__wrapper container">
         <h2 class="visually-hidden">Каталоги спортивного питания</h2>
 
         <div class="catalogs__item sport-line">
@@ -58,15 +60,15 @@
             <span class="sport-line__icon sport-line__icon--mass"></span>
             <h3 class="sport-line__title">Набор массы</h3>
           </div>
-          <p class="sport-line__definition">Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <p class="sport-line__definition">Заработать авторитет среди дворовых котов и&nbsp;даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br> мышцы!</p>
           <a class="sport-line__catalog" href="#">Каталог pro</a>
         </div>
       </div>
     </section>
 
-    <section class="page-main__advantages advantages">
-      <div class="advantages__wrapper">
+    <section class="advantages">
+      <div class="advantages__wrapper container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--one">
@@ -101,7 +103,7 @@
       </div>
     </section>
 
-    <section class="page-main__results results">
+    <section class="results container">
       <h2 class="results__title">Живой пример</h2>
       <p class="results__description">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
@@ -126,7 +128,7 @@
       </div>
     </section>
 
-    <section class="page-main__contacts contacts">
+    <section class="contacts container">
       <h2 class="contacts__title">
         приглашаем к сотрудничеству дилеров!
       </h2>
@@ -136,7 +138,7 @@
       </p>
     </section>
 
-    <section class="page-main__map">
+    <section class="main-map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.219551917502!2d30.32302078176253!3d59.9388746119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586087637847!5m2!1sru!2sru"
         width="320" height="400" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

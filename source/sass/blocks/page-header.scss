@@ -1,27 +1,22 @@
 .page-header {
   min-height: 65px;
+  border-bottom: 1px solid $grey;
 }
 
-.page-header__logo-wrap {
-  display: block;
-  padding-left: 20px;
-  padding-top: 11px;
-  padding-bottom: 15px;
-
-  border-bottom: 1px solid $grey;
+.page-header__wrapper {
+  min-height: 65px;
 }
 
 @media (min-width: $width-tablet) {
   .page-header {
     display: flex;
     justify-content: space-between;
-  }
 
-  .page-header__logo-wrap {
     border: none;
   }
 
-  // .page-header__logo-image {
-  //   background: url(../../img/logo-tablet.svg) no-repeat center;
-  // }
+  .page-header__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
 }

@@ -1,11 +1,5 @@
 .sport-line {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  // min-width: 280px;
-  // @include size(null, 266px);
 
   background-color: $grey;
 }
@@ -56,7 +50,7 @@
 }
 
 .sport-line__definition {
-  padding: 20px 0;
+  padding: 25px 0;
   margin-bottom: 20px;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -87,6 +81,7 @@
 }
 
 
+// ПЛАНШЕТ
 @media (min-width: $width-tablet) {
   .sport-line {
     min-height: 372px;
@@ -99,16 +94,20 @@
   }
 
   .sport-line__definition {
+    padding-top: 30px;
+    padding-bottom: 60px;
+
     border: none;
   }
 
   .sport-line__catalog {
-    @include text(20px,20px);
+    @include text(20px, 20px);
 
     &::after {
       left: 130px;
     }
   }
+
   .sport-line__icon {
     position: absolute;
     right: 60px;
@@ -127,10 +126,16 @@
 }
 
 
+// ДЕСКТОП
 @media (min-width: $width-desktop) {
-  // .sport-line__wrapper {
-  //   margin-top: 45px;
-  // }
+  .sport-line__definition {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    & br {
+      display: none;
+    }
+  }
 
   .sport-line__icon {
     position: relative;
