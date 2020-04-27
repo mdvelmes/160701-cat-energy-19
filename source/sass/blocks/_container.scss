@@ -1,0 +1,19 @@
+.container {
+  width: auto;
+  @include center;
+  padding: 0 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .container {
+    width: 768px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .container {
+    width: 1300px;
+    padding: 0 40px;
+  }
+}
