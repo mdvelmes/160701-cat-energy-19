@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAT ENERGY - Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,103 +29,113 @@
   </header>
 
   <main class="page-main">
-    <section class="select-program">
+    <section class="select-program container">
       <form class="select-program__form form" action="https://echo.htmlacademy.ru" method="GET">
         <h1 class="form__title">Подбор программы</h1>
-        <p class="form__description">Заполните анкету и мы подберем
-          программу питания для вашего кота</p>
-        <fieldset class="form__element">
-          <legend class="form__line visually-hidden">Персональные данные кота</legend>
-          <ul class="form__input-wrap-all" role="none">
-            <li class="form__input-wrap">
-              <label class="form__label" for="name">Имя:*</label>
-              <input class="form__input" type="text" name="name" id="name" required>
-            </li>
-            <li class="form__input-wrap">
-              <label class="form__label" for="weight">Вес (кг):*</label>
-              <input class="form__input" type="text" name="weight" id="weight" required>
-            </li>
-            <li class="form__input-wrap">
-              <label class="form__label" for="age">Возраст (лет):</label>
-              <input class="form__input" type="text" name="age" id="age">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__element">
-          <legend class="form__line visually-hidden">Цель</legend>
-          <ul class="form__radio-border" role="none">
-            <li class="form__radio-wrap">
-              <input class="form__radio" type="radio" name="goal" value="slim" id="slim">
-              <label class="form__label" for="slim">Похудение</label>
-            </li>
-            <li class="form__radio-wrap">
-              <input class="form__radio" type="radio" name="goal" value="mass" id="mass">
-              <label class="form__label" for="mass">Набор массы</label>
-            </li>
-            <li class="form__radio-wrap">
-              <input class="form__radio" type="radio" name="goal" value="consult" id="consult">
-              <label class="form__label" for="consult">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__element">
-          <legend class="form__line">Контактные данные (владельца кота)</legend>
-          <ul class="form__input-wrap-all" role="none">
-            <li class="form__input-wrap">
-              <label class="form__label" for="e-mail">E-mail:*</label>
-              <input class="input" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
-            </li>
-            <li class="form__input-wrap">
-              <label class="form__label" for="tel">Телефон:*</label>
-              <input class="input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="form__element">
-          <label class="form__line" for="comment">Комментарий</label>
-          <textarea class="comment" name="comment" id="comment" cols="30" rows="10"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="select-program__form-wrapper">
+          <p class="form__description">Заполните анкету и мы подберем
+            программу питания для вашего кота</p>
+          <div class="form__personal">
+            <fieldset class="form__element">
+              <legend class="form__line visually-hidden">Персональные данные кота</legend>
+              <ul class="form__input-wrap-all" role="none">
+                <li class="form__input-wrap">
+                  <label class="form__label" for="name">Имя:*</label>
+                  <input class="form__input" type="text" name="name" id="name" placeholder="БАРСИК" required>
+                </li>
+                <li class="form__input-wrap">
+                  <label class="form__label" for="weight">Вес (кг):*</label>
+                  <input class="form__input" type="text" name="weight" id="weight" placeholder="7" required>
+                </li>
+                <li class="form__input-wrap">
+                  <label class="form__label" for="age">Возраст (лет):</label>
+                  <input class="form__input" type="text" name="age" id="age" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__element">
+              <legend class="form__line visually-hidden">Цель</legend>
+              <ul class="form__radio-border" role="none">
+                <li class="form__radio-wrap">
+                  <input class="form__radio" type="radio" name="goal" value="slim" id="slim">
+                  <label class="form__label" for="slim">Похудение</label>
+                </li>
+                <li class="form__radio-wrap">
+                  <input class="form__radio" type="radio" name="goal" value="mass" id="mass">
+                  <label class="form__label" for="mass">Набор массы</label>
+                </li>
+                <li class="form__radio-wrap">
+                  <input class="form__radio" type="radio" name="goal" value="consult" id="consult">
+                  <label class="form__label" for="consult">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="form__element">
+            <legend class="form__line">Контактные данные (владельца кота)</legend>
+            <ul class="form__contact-wrap-all" role="none">
+              <li class="form__contact-wrap">
+                <label class="form__label" for="e-mail">E-mail:*</label>
+                <input class="form__input" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com"
+                  required>
+              </li>
+              <li class="form__contact-wrap">
+                <label class="form__label" for="tel">Телефон:*</label>
+                <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__element">
+            <label class="form__line" for="comment">Комментарий</label>
+            <textarea class="form__comment" name="comment" id="comment" cols="30" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <fieldset class="form__element">
+            <legend class="form__line">Дополнительно</legend>
+            <ul class="form__checkbox-wrap-all" role="none">
+              <li class="form__checkbox-wrap">
+                <input class="form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                <label class="form__label" for="sugar">Сахарозаменитель</label>
+              </li>
+              <li class="form__checkbox-wrap">
+                <input class="form__checkbox" type="checkbox" name="water" id="water">
+                <label class="form__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="form__checkbox-wrap">
+                <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+                <label class="form__label" for="milk">Молоко</label>
+              </li>
+              <li class="form__checkbox-wrap">
+                <input class="form__checkbox" type="checkbox" name="vitamin" id="vitamin">
+                <label class="form__label" for="vitamin">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__required-wrapper">
+            <button class="form__to-send button" type="submit">Отправить заявку</button>
+            <small class="form__required">* — Обязательные поля</small>
+          </div>
         </div>
-        <fieldset class="form__element">
-          <legend class="form__line">Дополнительно</legend>
-          <ul class="form__checkbox-wrap-all" role="none">
-            <li class="form__checkbox-wrap">
-              <input class="checkbox" type="checkbox" name="sugar" id="sugar" checked>
-              <label class="form__label" for="sugar">Сахарозаменитель</label>
-            </li>
-            <li class="form__checkbox-wrap">
-              <input class="checkbox" type="checkbox" name="water" id="water">
-              <label class="form__label" for="water">Питьевая вода</label>
-            </li>
-            <li class="form__checkbox-wrap">
-              <input class="checkbox" type="checkbox" name="milk" id="milk">
-              <label class="form__label" for="milk">Молоко</label>
-            </li>
-            <li class="form__checkbox-wrap">
-              <input class="checkbox" type="checkbox" name="vitamin" id="vitamin">
-              <label class="form__label" for="vitamin">Витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="form__to-send button" type="submit">Отправить заявку</button>
-        <small class="form__required">* — Обязательные поля</small>
       </form>
     </section>
 
-    <section class="contacts">
-      <h2 class="contacts__title">
-        приглашаем к сотрудничеству дилеров!
-      </h2>
-      <p class="contacts__address">
-        ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург
-      </p>
+    <section class="contacts contacts--casting">
+      <div class="contacts__wrapper container">
+        <h2 class="contacts__title">
+          приглашаем к сотрудничеству дилеров!
+        </h2>
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8
+          <br><br>
+          Санкт-Петербург
+        </p>
+      </div>
     </section>
 
     <section class="main-map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.219551917502!2d30.32302078176253!3d59.9388746119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586087637847!5m2!1sru!2sru"
-        width="320" height="400" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        width="100%" height="400" style="border:0;" aria-hidden="false"></iframe>
     </section>
   </main>
 

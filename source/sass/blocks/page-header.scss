@@ -16,6 +16,10 @@
   }
 
   .page-header__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }

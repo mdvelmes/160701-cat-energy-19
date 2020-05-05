@@ -45,3 +45,17 @@
   background-size: auto;
   @include size(10px, 19px);
 }
+
+@media (min-width: $width-tablet) {
+  .social__link--vk {
+    @include size(30px, 16px);
+  }
+
+  .social__link--insta {
+    @include size(23px);
+  }
+
+  .social__link--fb {
+    @include size(14px, 28px);
+  }
+}

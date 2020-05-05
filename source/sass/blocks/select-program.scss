@@ -1,0 +1,16 @@
+.select-program__form {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .select-program__form-wrapper {
+    width: 630px;
+    @include center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .select-program__form-wrapper {
+    width: 100%;
+  }
+}

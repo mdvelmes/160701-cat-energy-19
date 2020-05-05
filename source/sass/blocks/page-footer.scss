@@ -1,5 +1,6 @@
 .page-footer {
   padding: 40px 0 20px;
+
   background-color: $grey;
 }
 
@@ -20,6 +21,7 @@
 }
 
 .page-footer__wrapper {
+  position: relative;
   padding: 0 20px;
 }
 
@@ -29,5 +31,9 @@
     display: flex;
     align-items: center;
     padding: 0 30px;
+  }
+
+  .page-footer__social {
+    border: none
   }
 }

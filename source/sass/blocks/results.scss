@@ -14,6 +14,51 @@
   padding-bottom: 25px;
 }
 
+.results__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.results__photo {
+  display: block;
+  @include center;
+}
+
+.results__advance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.results__scale {
+  margin: 0 17px;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.results__value {
+  font-family: $font-oswald;
+  @include text(16px, 20px);
+  text-transform: uppercase;
+  color: $text-black;
+}
+
+.results__count,
+.results__annotation,
+.results__cost-text {
+  display: block;
+}
+
 .results__count {
   font-family: $font-oswald;
   @include text(24px, 24px);
@@ -23,22 +68,86 @@
 
 .results__annotation {
   @include text(12px, 12px);
+  text-align: center;
 }
 
 .results__cost {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
   padding-bottom: 40px;
 
   font-family: $font-oswald;
   @include text(14px, 20px);
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   color: $text-black;
 }
 
-.results__before,
-.results__after {
-  font-family: $font-oswald;
-  @include text(16px, 20px);
-  text-transform: uppercase;
-  color: $text-black;
+@media (min-width: $width-tablet) {
+  .results {
+    background-color: initial;
+  }
+
+  .results {
+    // position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 462px;
+
+      background-image: linear-gradient(#f2f2f2, #eaeaea);
+      z-index: -1 ;
+    }
+  }
+
+  .results__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .results__cost {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .results__scale {
+    width: 428px;
+    height: 6px;
+
+    border-radius: 3px;
+    background-color: #dcdcdc;
+  }
+}
+
+
+@media (min-width: $width-desktop) {
+  .results {
+    background-color: initial;
+  }
+
+  .results__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .results__example {
+    width: 450px;
+  }
+
+  .results__info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .results__cost {
+    flex-direction: row;
+    align-items: flex-start;
+
+    &-text {
+      padding-right: 60px;
+    }
+  }
 }
